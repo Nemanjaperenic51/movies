@@ -1,0 +1,165 @@
+:root {
+    --red: #bc1414;
+    --gray: #919191;
+    --darkgrey: #454445;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+} 
+
+
+
+body {
+    background: linear-gradient(rgba(26,26,26.9), rgba(26,26,26,.9)), url(../img/bg.jpg);
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.5;
+    background-attachment: fixed;
+}
+
+/**********************
+***********************
+     H E A D E R
+***********************
+**********************/
+
+header h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header h1 span{
+    color: var(--red);
+}
+
+header h5 {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/**********************
+***********************
+        N A V
+***********************
+**********************/
+
+nav {
+    background: rgba(0,0,0,.9);
+    border-bottom: 5px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li  a {
+    text-decoration: none;
+    color: var(--gray);
+    letter-spacing: 2px;
+    padding: 25px 50px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    transition: .5s ease;
+}
+
+/**********************
+***********************
+    P I C T U R E 
+***********************
+**********************/
+
+.picture img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/**********************
+***********************
+    S E R V I C E S
+***********************
+**********************/
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.services article {
+    flex: 0 0 31%;
+}
+
+.services article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.services article button {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: var(--red);
+}
+
+/**********************
+***********************
+         B L O G
+***********************
+**********************/
+
+.blog {
+    padding: 30px 0;
+}
+
+.blog article {
+    width: 70%;
+    float: left;
+}
+.blog article h3 {
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.blog article img{
+    width: 100%;
+}
+
+.blog aside {
+    width: 30%;
+    float: left;
+    padding-left: 30px;
+}
+.blog aside  h3{
+   font-size: 2.3rem;
+}
+
+.blog aside h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.plog .post::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--gray);
+    margin: 20px 0 40px;
+}
